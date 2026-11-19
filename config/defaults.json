@@ -1,0 +1,43 @@
+{
+  "song_defaults": {
+    "steps": 64,
+    "cfg_scale": 2.0,
+    "companion_scale": 0.0,
+    "duration_seconds": 180,
+    "solver": "midpoint",
+    "lyric_timing": true,
+    "output_format": "flac",
+    "mp3_bitrate": 320,
+    "lm_batch_size": 1,
+    "synth_batch_size": 1,
+    "cot": "full",
+    "abc_continue": false
+  },
+  "style_defaults": {
+    "language": "English",
+    "genre": "pop",
+    "era": "2020s",
+    "vocal": "female lead, clear",
+    "instruments": "drums, bass, synth, guitar",
+    "mood": "upbeat energetic",
+    "production": "clean modern",
+    "bpm": 120
+  },
+  "training_defaults": {
+    "preset": "balanced",
+    "steps": 100,
+    "batch_size": 4,
+    "learning_rate": 0.0001,
+    "save_every": 25
+  },
+  "separator_defaults": {
+    "engine": "htdemucs",
+    "runtime": "auto",
+    "stems": ["drums", "bass", "other", "vocals", "guitar", "piano"]
+  },
+  "karaoke_defaults": {
+    "provider": "parakeet",
+    "whisper_model": "parakeet-tdt-int8",
+    "runtime": "cuda"
+  }
+}
